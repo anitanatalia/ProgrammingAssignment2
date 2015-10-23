@@ -33,7 +33,7 @@ inv <- solve(data,...)
 x$setinverse(inv)
 return(inv)
 }
-## Test of my functions:
+## Test my functions:
         ## >x <- rbind(c(1, 2), c(3, 4))
         ##>m <- makeCacheMatrix(x)
         ##> m$getmatrix()
