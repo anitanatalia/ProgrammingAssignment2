@@ -15,8 +15,8 @@ setinverse <- function(inverse) inv <<- inverse
 getinverse <- function() inv
 list(setmatrix = setmatrix, getmatrix = getmatrix, setinverse = setinverse, getinverse = getinverse)
 }
-## This following function calcukates the inverse of the special matrix created with the above function.
-## However, it first checks to see if the inverse has already been calculated. 
+## The cacheSolve function calcukates the inverse of the special matrix created with the above function.
+## First it checks to see if the inverse has already been calculated. 
 ## If so, it gets the inverse from the cache and skips the computation. 
 ## Otherwise, it calculates the inverse of the data and sets the value of the inverse in the cache via the setinverse function.
 
@@ -49,4 +49,6 @@ return(inv)
         ##     [,1] [,2]
         ##[1,] -2.0  1.0
         ##[2,]  1.5 -0.5
+
+### The source file which helped me writing the description was: Readme.md        
        
